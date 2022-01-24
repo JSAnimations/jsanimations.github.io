@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <lang="en">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Animation Studios</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="images/logo.png" class="logo">
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="./insider/index.html">Sign in</a></li>
+                        <li><a href="./insider/index.html">Sign up</a></li>
+                        <li><a href="">About</a></li>
+                    </ul>
+                </nav>
+                <img src="images/menu.png" class="menu-icon" onClick="togglemenu()">
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <h2 style="margin-right: 50px;">Entertainment at <br>your fingertips</h2>
+                    <h3 style="margin-right: 20px;">Watch JS Animation Originals</h3>
+                    <h4>Stream FREE!</h4>
+                    <p>Please sign in to Google before watching.</p>
+                    <a href="./insider/index.html"><button type="button">Start Streaming</button></a>
+                </div>
+                <div class="col-2">
+                    <img src="images/controller.png" class="controller">
+                    <div class="color-box"></div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var menuList = document.getElementById("menuList")
+
+            menuList.style.maxHeight = "0px";
+
+            function togglemenu(){
+                if(menuList.style.maxHeight=="0px")
+                    {
+                        menuList.style.maxHeight="130px";
+                    }
+                else
+                    {
+                        menuList.style.maxHeight = "0px";
+                    }
+            }
+        </script>
+
+    </body>
+</html>
